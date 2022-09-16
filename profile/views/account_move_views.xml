@@ -5,8 +5,8 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//div[@name='journal_div']" position="after">
-              <field name="is_new_customer" readonly="1" widget="toggle_button"/>
+            <xpath expr="//group[@id='header_left_group']" position="inside">
+                <field name="is_new_customer"/>
             </xpath>
         </field>
     </record>

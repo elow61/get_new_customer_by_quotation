@@ -7,5 +7,5 @@ class AccountMove(models.Model):
 
     is_new_customer = fields.Boolean(
         string='Is new customer',
-        readonly=True,
+        readonly=True
     )
